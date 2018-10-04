@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DEMO - KIPU</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" >
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+</head>
+<body>
+<!--navbar-->
+<div class="w3-top">
+	<div class="w3-bar w3-pink w3-card">
+	<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i>
+	</a>
+	   <a  href="#" class="w3-bar-item w3-padding-large w3-hover-black">HOME</a>
+	   <a  href="#JOBS" class="w3-bar-item w3-padding-large w3-hover-black">JOBS</a>
+	   <a href="#TRAINING" class="w3-bar-item w3-padding-large w3-hover-black">TRAINING</a>
+	   <a href="#CONTACTUS" class="w3-bar-item w3-padding-large w3-hover-black">CONTACT US</a>
+	   <div class="w3-dropdown-hover w3-hide-small">
+	   		<button class="w3-padding-large w3-button">MORE<i class="fa fa-caret-down"></i></button>
+	   <div class="w3-dropdown-content w3-bar-block w3-card-4">
+	   		<a href="#" class="w3-bar-item w3-button">Blogs</a>
+	   		<a href="#" class="w3-bar-item w3-button">How to get job ready?</a>
+	   	</div>
+	   </div>
+	   <a href="javascript:void(0)" class="w3-padding-large w3-hover-blue w3-hide-small w3-right"><i class="fa fa-search" aria-hidden="true"></i></a>
+	</div>
+</div>
+<p><br><br><br>
+<img src = "images\potato.png" align = "center">
+</p>
+<script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+<script>
+  var myLandbotPopup = new LandbotPopup({
+    index: 'https://landbot.io/u/H-85722-I01VQQAYHY0HIRVE/index.html',
+  });
+</script>
+<script>
+  // Show a proactive message on landbot load
+  myLandbotPopup.on('landbot-load', () => {
+    myLandbotPopup.sendProactive("Hello there!");
+  });
+</script>
+</body>
+</html>
